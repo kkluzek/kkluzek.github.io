@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sposób przetwarzania danych przez LeanHunter Cloud archive oraz cofnięcie dostępu do Google Drive.">
+  <meta name="referrer" content="no-referrer">
+  <title>Polityka prywatności — LeanHunter Cloud archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html">LeanHunter Cloud archive</a><nav aria-label="Nawigacja"><a href="index.html">O aplikacji</a><a href="privacy.html" aria-current="page">Prywatność</a><a href="terms.html">Zasady</a></nav></div></header>
+<main id="main" class="wrap prose">
+  <p class="eyebrow">LeanHunter Cloud archive</p>
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Wersja z 22 października 2026 r.</p>
+  <p>Ta polityka opisuje osobistą aplikację <strong>LeanHunter Cloud archive</strong>. Jej właścicielem jest Konrad Kluzek. Kontakt: <a href="mailto:konrad.kluzek@gmail.com">konrad.kluzek@gmail.com</a>.</p>
+  <h2>Cel i zakres dostępu</h2>
+  <p>Aplikacja zapisuje, odczytuje i sprawdza archiwa wyników obliczeń na Google Drive właściciela. Korzysta wyłącznie z zakresu OAuth <code>https://www.googleapis.com/auth/drive.file</code>: plików utworzonych przez aplikację oraz plików świadomie udostępnionych jej przez użytkownika. Nie otrzymuje ogólnego dostępu do całego Dysku, poczty, kontaktów ani kalendarza.</p>
+  <h2>Jakie dane są przetwarzane</h2>
+  <ul>
+    <li>Treść plików archiwum: raportów, manifestów i wskazanych plików wynikowych.</li>
+    <li>Metadane potrzebne do zapisu i sprawdzenia kopii, w tym nazwy, identyfikatory, rozmiary, struktura katalogów i dostępne sumy kontrolne.</li>
+    <li>Informacje o dostępnym miejscu oraz wyniku operacji, potrzebne do oceny, czy zapis się powiedzie i czy kopia jest kompletna.</li>
+    <li>Dane autoryzacyjne OAuth umożliwiające działanie po zgodzie właściciela. Aplikacja nie potrzebuje hasła do konta Google.</li>
+  </ul>
+  <h2>Użycie i odbiorcy danych</h2>
+  <p>Dane służą wyłącznie realizacji zadań archiwizacji, odczytu, sprawdzania i odzyskiwania wyników zleconych przez właściciela. Nie są sprzedawane, używane do reklam ani profilowania. Aplikacja nie używa danych uzyskanych z Google Drive do trenowania lub ulepszania ogólnych modeli AI.</p>
+  <p>Pliki są przechowywane przez Google Drive. W środowisku obliczeniowym właściciela powstają kopie robocze, manifesty i wyniki sprawdzeń. Agent działający w tym środowisku może przetwarzać potrzebne metadane oraz odczytywane wyniki w ramach zleconego zadania. Jeżeli informacje trafiają do dostawcy używanego środowiska lub agenta AI, jest to część wykonania tego zadania, zgodnie z ustawieniami konta i warunkami tego dostawcy. Ta polityka nie ustanawia odrębnych gwarancji retencji lub użycia danych przez dostawców.</p>
+  <p>Użycie informacji otrzymanych z Google APIs jest ograniczone do opisanych funkcji i podlega <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym wymaganiom Limited Use.</p>
+  <h2>Przechowywanie i ochrona</h2>
+  <p>Archiwa pozostają na Dysku do ich usunięcia przez właściciela. Cofnięcie zgody OAuth nie usuwa już zapisanych plików. Kopie robocze i wyniki pozostają w środowiskach wybranych przez właściciela zgodnie z jego działaniami i zasadami tych usług; aplikacja nie gwarantuje ich bezterminowej dostępności.</p>
+  <p>Konfiguracja autoryzacji jest przechowywana oddzielnie od publicznej strony i kodu: w prywatnych plikach konfiguracyjnych oraz osobistym magazynie sekretów środowiska Cloud. Uprawnienia plików ograniczają dostęp lokalny. Dane autoryzacyjne nie powinny trafiać do raportów, logów ani repozytoriów. Połączenia z Google API korzystają z HTTPS.</p>
+  <h2>Cofnięcie zgody i usunięcie danych</h2>
+  <p>Dostęp można cofnąć na stronie <a href="https://myaccount.google.com/connections">połączeń konta Google</a>, wybierając tę aplikację i usuwając jej dostęp. Aby zakończyć korzystanie, właściciel usuwa również jej prywatne profile autoryzacji i wpisy w magazynie sekretów. Pliki archiwum oraz kopie robocze usuwa osobno w miejscach, w których je przechowuje. Pytania można kierować na podany wyżej adres kontaktowy.</p>
+  <h2>Odwiedziny tej strony</h2>
+  <p>Strona nie ma własnych formularzy, analityki, reklam ani zewnętrznych skryptów i nie ustawia własnych plików cookie. Hosting GitHub Pages zapisuje adresy IP odwiedzających w celach bezpieczeństwa, zgodnie z <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">polityką prywatności GitHub</a>. Dane z archiwum i tokeny OAuth nie są przesyłane na tę stronę.</p>
+  <h2>Zmiany</h2>
+  <p>Data wersji znajduje się na początku dokumentu. Zmiana celu użycia danych lub rozszerzenie uprawnień wymaga aktualizacji informacji i ponownej zgody właściciela przed takim użyciem.</p>
+</main>
+<footer class="site-footer"><div class="wrap"><p>LeanHunter Cloud archive · Konrad Kluzek</p><div class="footer-links"><a href="index.html">O aplikacji</a><a href="terms.html">Zasady korzystania</a></div></div></footer>
+</body>
+</html>
